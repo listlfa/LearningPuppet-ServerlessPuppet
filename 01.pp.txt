@@ -1,3 +1,5 @@
+# test
+
 file {"what":
 path => "c://test.txt",
 content => "testd",
