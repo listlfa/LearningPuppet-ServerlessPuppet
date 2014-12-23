@@ -1,0 +1,28 @@
+#https://docs.puppetlabs.com/learning/variables.html
+
+
+$my_variable = "A bunch of text"
+
+notify {'this is the resource title':}
+notify {'this is the resource title too':
+message		=>	'this sample doesn\'t use the title as the message too',
+}
+notify {$my_variable:}
+notify {$my_2ndvariable:}
+
+    file {'motd':
+      ensure  => file,
+      path    => 'c:/motd.txt',
+      mode    => 0644,
+      content => "This Learning Puppet VM's IP address is ${ipaddress}. It thinks its \r\n
+    hostname is ${fqdn}, but you might not be able to reach it there \r\n
+    from your host machine. It is running ${operatingsystem} ${operatingsystemrelease} and \r\n
+    Puppet ${puppetversion}. \r\n
+    Web console login: \r\n
+      URL: https://${ipaddress_eth0} \r\n #test comment 1
+      User: puppet@example.com \r\n  #test comment 1
+      Password: learningpuppet \r\n
+	is_virtual : $is_virtual
+
+    ",
+    }

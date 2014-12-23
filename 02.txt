@@ -1,0 +1,8 @@
+#create user
+
+user { 'puptest':
+  ensure  => 'present',
+  comment => 'puppet test',
+  groups  => ['Guests'],
+  password => 'zzxcvbnm123!',
+}
