@@ -23,5 +23,5 @@ class WinFeatures_IIS {
 
 
 
-    include 'WinFeatures_IIS'
+    include WinFeatures_IIS
 
