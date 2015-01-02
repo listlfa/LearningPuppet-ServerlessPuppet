@@ -22,3 +22,7 @@ class WinFeatures_IIS {
 }
 
 
+node 'mywebserver' {
+    include 'WinFeatures_IIS'
+}
+
