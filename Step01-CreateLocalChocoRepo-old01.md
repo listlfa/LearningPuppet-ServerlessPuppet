@@ -10,4 +10,11 @@
 ```
 choco install githubforwindows 
 ```
-* SFGH 
+* Clone this GitHub repo
+* Get public choco files
+  * wget http://chocolatey.org/api/v2/package/spacesniffer/ -Outfile spacesniffer.nupkg
+* Install VS 2012
+  * alternative, 2013
+    * choco install visualstudio2013expressweb 
+* Open solution file from github repo
+* Apply VS Updates/Extensions
