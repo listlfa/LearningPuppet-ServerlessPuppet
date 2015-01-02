@@ -1,0 +1,13 @@
+
+PS C:\Users\Administrator\Documents\GitHub\LearningPuppet-ServerlessPuppet> get-command -module servermanager
+
+CommandType     Name                                               ModuleName
+-----------     ----                                               ----------
+Alias           Add-WindowsFeature                                 servermanager
+Alias           Remove-WindowsFeature                              servermanager
+Function        Disable-ServerManagerStandardUserRemoting          servermanager
+Function        Enable-ServerManagerStandardUserRemoting           servermanager
+Cmdlet          Get-WindowsFeature                                 servermanager
+Cmdlet          Install-WindowsFeature                             servermanager
+Cmdlet          Uninstall-WindowsFeature                           servermanager
+
