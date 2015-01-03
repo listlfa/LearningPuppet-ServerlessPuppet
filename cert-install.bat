@@ -15,3 +15,5 @@ certmgr /c /add C:\Users\Administrator\Downloads\GeoTrust_True_Credentials_CA_2.
 certmgr /c /add C:\Users\Administrator\Downloads\GeoTrust_Universal_CA.pem /s root
 certmgr /c /add C:\Users\Administrator\Downloads\GeoTrust_Universal_CA2.pem /s root
 
+pause
+
