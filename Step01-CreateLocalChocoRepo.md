@@ -4,10 +4,10 @@ http://blog.ittoby.com/2014/07/setup-your-own-chocoloateynuget.html
 nope
 http://mbrownnyc.wordpress.com/2013/09/06/create-your-own-nuget-server-to-serve-packages/
 * Install Choclately
- * Bypass for this session (safer) with
-  * Set-ExecutionPolicy Bypass -Scope Process
- * Bypass for this permenantly (easier) with
-  * Set-ExecutionPolicy Unrestricted 
+  * Bypass for this session (safer) with
+    * Set-ExecutionPolicy Bypass -Scope Process
+  * Bypass for this permenantly (easier) with
+    * Set-ExecutionPolicy Unrestricted 
 * Install Puppet
   * choco install puppet 
 * Setup Puppet
