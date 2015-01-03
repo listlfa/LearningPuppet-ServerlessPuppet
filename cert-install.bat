@@ -1,3 +1,22 @@
+certutil -addstore "Root" C:\Users\Administrator\Downloads\Equifax_Secure_Certificate_Authority.pem
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+certutil -addstore "Root" 
+
+
+
+
+pause
 
 
 certmgr /c /add C:\Users\Administrator\Downloads\Equifax_Secure_Certificate_Authority.pem /s root
