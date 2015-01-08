@@ -1,0 +1,5 @@
+# install/remove windows features.
+puppet module install opentable-windowsfeature
+
+#enable or disable Windows features on Windows 7, Windows Server 2008 R2.
+puppet module install puppetlabs-dism
