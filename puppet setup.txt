@@ -3,3 +3,9 @@ puppet module install opentable-windowsfeature
 
 #enable or disable Windows features on Windows 7, Windows Server 2008 R2.
 puppet module install puppetlabs-dism
+
+#This module provides the ability to manage ACLs on nodes 
+#https://forge.puppetlabs.com/puppetlabs/acl#purge
+puppet module install puppetlabs-acl
+
+
