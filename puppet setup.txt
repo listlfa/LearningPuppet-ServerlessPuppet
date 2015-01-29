@@ -9,3 +9,8 @@ puppet module install puppetlabs-dism
 puppet module install puppetlabs-acl
 
 
+#Module that will manage IIS for windows server 2008 and above. It will help maintain application pools, sites and virtual applications 
+#https://forge.puppetlabs.com/opentable/iis
+puppet module install opentable-iis
+
+
