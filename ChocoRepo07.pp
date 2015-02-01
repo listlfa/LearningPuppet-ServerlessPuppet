@@ -100,7 +100,7 @@ class chocolatey_repository_local {
     }
 
     iis::manage_virtual_application {'NuGet':
-      site_name   => 'NuGet',
+      site_name   => 'Default Web Site',
       site_path   => 'C:\Sites\NuGetRepo',
       app_pool    => 'DefaultAppPool'
     }
