@@ -70,7 +70,7 @@ class chocolatey_repository_local {
 			{ identity => 'Administrators', rights => ['full'] },
 			{ identity => 'SYSTEM', rights => ['full'] },
 			{ identity => 'IUSR', rights => ['write','read','execute'] },
-			{ identity => 'IIS AppPool\ChocoAppPool', rights => ['write','read','execute'] },
+			{ identity => 'IIS AppPool\DefaultAppPool', rights => ['write','read','execute'] },
 		],
 		inherit_parent_permissions => 'false',
 	}
@@ -79,30 +79,30 @@ class chocolatey_repository_local {
 		purge       => 'true',
 		permissions => [
 			{ identity => 'IUSR', rights => ['write','read','execute'] },
-			{ identity => 'IIS AppPool\ChocoAppPool', rights => ['write','read','execute'] },
+			{ identity => 'IIS AppPool\DefaultAppPool', rights => ['write','read','execute'] },
 		],
 		inherit_parent_permissions => 'true',
 	}	
 	
 	
 	#IIS Website and Application
-	iis::manage_app_pool {'ChocoAppPool':
-      enable_32_bit           => true,
+	iis::manage_app_pool {'DefaultAppPool':
+      enable_32_bit           => false,
       managed_runtime_version => 'v4.0',
     }
 
-    iis::manage_site {'ChocoWebSite':
+    iis::manage_site {'Default Web Site':
       site_path     => 'C:\sites',
       port          => '80',
       ip_address    => '*',
-      host_header   => 'ChocoWebSite',
-      app_pool      => 'ChocoAppPool'
+      host_header   => 'Default Web Site',
+      app_pool      => 'DefaultAppPool'
     }
 
-    iis::manage_virtual_application {'ChocoApp':
-      site_name   => 'ChocoWebSite',
+    iis::manage_virtual_application {'NuGet':
+      site_name   => 'NuGet',
       site_path   => 'C:\Sites\NuGetRepo',
-      app_pool    => 'ChocoAppPool'
+      app_pool    => 'DefaultAppPool'
     }
 }
 

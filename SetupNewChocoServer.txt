@@ -1,0 +1,17 @@
+iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
+
+*run puppet msi*
+
+*run github installer, clone*
+
+puppet module install opentable-windowsfeature
+puppet module install puppetlabs-dism
+puppet module install puppetlabs-acl
+puppet module install opentable-iis
+
+
+\\clone_puptest\c$\sites\NuGetRepo
+
+!! TODO add file perms to hdd !!!!
+
+!!! REDO WITH DEFAULT WEBSITE AND FIX DIR PERMS !!!!
